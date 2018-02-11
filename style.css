@@ -1,0 +1,158 @@
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.center {
+  text-align: center;
+}
+
+
+#centerCell {
+  text-align: center;
+}
+
+#centerCell2 {
+  text-align: center;
+}
+
+.modal {
+  padding: 0 25px 15px 25px;
+}
+
+
+/*#login, #logout {
+}*/
+
+.ui.success.compact.message {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.clickable {
+  overflow: hidden;
+}
+
+.clickable:after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  width: 30%;
+  height: 130%;
+  opacity: 0;
+  transform: rotate(-30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.0) 0%,
+    rgba(255, 255, 255, 0.15) 25%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+.clickable:hover:after {
+  opacity: 1;
+  top: -10px;
+  left: 110%;
+  transition-property: left, opacity;
+  transition-duration: 0.7s,  0.15s;
+  transition-timing-function: ease;
+}
+
+#eventsTableContainer {
+  padding-bottom: 30px;
+}
+
+#eventHeader {
+  font-size: 17px;
+}
+
+.topMenu i {
+  padding-left: 5px;
+}
+
+.viewModalBody {
+  margin-top: 14px;
+}
+
+.ui.dropdown.selection {
+  min-width: 8em;
+}
+
+.fixed.message {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.invitationButton {
+  margin-top: -11px;
+}
+
+.invite.actions {
+	padding-top: 10px;
+}
+
+.ui.clearing.segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invitationHeader {
+  opacity: 1 !important;
+  background: #FFF;
+}
+
+@media screen and (min-width: 800px) {
+
+  #containter {
+    height: 60%;
+    display: flex;
+    /* flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+  }
+
+  #menubar {
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-right: 20px;
+  }
+
+  .onlymobile {
+    display: none;
+  }
+
+  #ical_id {
+    width: 350px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  #logo {
+    display: none;
+  }
+
+  #menubar {
+    margin-right: auto;
+  }
+
+  #eventHeader, #scheduleHeader {
+    display: none;
+  }
+
+  #containter {
+    margin-bottom: 10px;
+  }
+
+}
